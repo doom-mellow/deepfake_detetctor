@@ -1,0 +1,117 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    /* Forensic Light Theme - Professional Light Mode */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 215 25% 15%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 210 15% 95%;
+    --accent-foreground: 215 25% 15%;
+    --destructive: 10 90% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 190 100% 50%;
+    
+    /* Semantic Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 36 100% 57%;
+    --warning-foreground: 215 25% 15%;
+    --info: 190 100% 50%;
+    --info-foreground: 0 0% 100%;
+    
+    /* Chart Colors */
+    --chart-1: 190 100% 50%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 36 100% 57%;
+    --chart-4: 10 90% 55%;
+    --chart-5: 215 25% 15%;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 190 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 95%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 215 20% 88%;
+    --sidebar-ring: 190 100% 50%;
+  }
+
+  .dark {
+    /* Forensic Dark Theme - Professional Lab Environment */
+    --background: 215 25% 11%;
+    --foreground: 210 20% 92%;
+    --card: 215 20% 16%;
+    --card-foreground: 210 20% 92%;
+    --popover: 215 20% 16%;
+    --popover-foreground: 210 20% 92%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 215 25% 11%;
+    --secondary: 215 20% 20%;
+    --secondary-foreground: 210 20% 92%;
+    --muted: 215 20% 20%;
+    --muted-foreground: 215 15% 62%;
+    --accent: 215 20% 20%;
+    --accent-foreground: 210 20% 92%;
+    --destructive: 10 90% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 20% 23%;
+    --input: 215 20% 23%;
+    --ring: 190 100% 50%;
+    
+    /* Semantic Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 36 100% 57%;
+    --warning-foreground: 215 25% 11%;
+    --info: 190 100% 50%;
+    --info-foreground: 215 25% 11%;
+    
+    /* Chart Colors */
+    --chart-1: 190 100% 50%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 36 100% 57%;
+    --chart-4: 10 90% 55%;
+    --chart-5: 210 20% 92%;
+    
+    /* Sidebar */
+    --sidebar-background: 215 25% 11%;
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 190 100% 50%;
+    --sidebar-primary-foreground: 215 25% 11%;
+    --sidebar-accent: 215 20% 20%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 215 20% 23%;
+    --sidebar-ring: 190 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
